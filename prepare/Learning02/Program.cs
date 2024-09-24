@@ -17,9 +17,9 @@ class Program
         job2._company = "Apple";
         job2._startYear = 2022;
         job2._endYear = 2023;
-        // verify you can display the company of job on the screen 
-        Console.WriteLine(job1._company);
-        Console.WriteLine(job2._company);
 
+        // call Job display() method
+        job1.Display();
+        job2.Display();
     }
 }
