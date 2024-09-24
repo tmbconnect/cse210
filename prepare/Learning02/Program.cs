@@ -18,8 +18,15 @@ class Program
         job2._startYear = 2022;
         job2._endYear = 2023;
 
-        // call Job display() method
-        job1.Display();
-        job2.Display();
+        
+        // create new instance of the Resume class
+        Resume myResume = new Resume();
+        myResume._personName = "Allison Rose";
+        // add job1 and job2 to the Jobs list
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+
+        myResume.Display();
+
     }
 }
