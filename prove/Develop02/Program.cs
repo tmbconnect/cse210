@@ -12,6 +12,7 @@ class Program
         // Menu with a while loop and switch cases to handle user choice
         while(running)
         {
+           Console.WriteLine("Thank you for writing in your journal today. What would you like to do?")
            Console.WriteLine("Menu:"); 
            Console.WriteLine("1. Write a new entry");
            Console.WriteLine("2. Display the journal");
@@ -25,9 +26,9 @@ class Program
             case "1":
                 string prompt = promptGenerator.GetRandomPrompt();
                 Console.WriteLine(prompt);
-                string entryText = Console.ReadLinde();
+                string entryText = Console.ReadLine();
                 string date = DateTime.Now.ToString("yyyy-MM-dd");
-                journal.AddEntry(newEntry(date, prompt, entryText));
+                journal.AddEntry(new Entry(date, prompt, entryText));
                 break;
 
             case "2":
@@ -43,7 +44,7 @@ class Program
             case "4":
                 Console.Write("Enter filename to load: ");
                 string loadFilename = Console.ReadLine();
-                journal.SaveToFile(saveFilename);
+                journal.SaveToFile(loadFilename);
                 break;
 
             case "5":
