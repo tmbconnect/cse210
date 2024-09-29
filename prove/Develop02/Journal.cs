@@ -24,10 +24,10 @@ public class Journal
         List<string> lines = new List<string>();
         foreach (var entry in _entries)
         {
-            lines.Add($"{entry._date}|{entry.promptText}|{entry.entryText}");
+            lines.Add($"{entry._date}|{entry._promptText}|{entry._entryText}");
 
         }
-        file.WriteAllLines(file, lines);
+        File.WriteAllLines(file, lines);
     }
       
       // Method to load lines from a file
