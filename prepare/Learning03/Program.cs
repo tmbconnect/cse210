@@ -21,10 +21,10 @@ class Program
         Console.WriteLine(fraction3.GetDecimalValue());    // Output 0.8571428571428751
 
         // Test Getters and Setters
-        fraction3.SetTop(3);
-        fraction3.SetBottom(4);
-        Console.WriteLine(fraction3.GetFractionString()); //Output 3/4
-        Console.WriteLine(fraction3.GetDecimalValue());   // Output 0.75
+        fraction3.SetTop(2);
+        fraction3.SetBottom(5);
+        Console.WriteLine(fraction3.GetFractionString()); //Output 2/5
+        Console.WriteLine(fraction3.GetDecimalValue());   // Output 0.4
 
     }
 }
