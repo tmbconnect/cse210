@@ -27,9 +27,9 @@ public class Fraction
         return _top;
     }
 // Setter for the top value 
-    public void SetTop(int top)
+    public void SetTop(int wholeNumber)
     {
-        _top = top;
+        _top = wholeNumber;
     }
 // Getter for the bottom value
  public int GetBottom()
@@ -49,7 +49,7 @@ public class Fraction
 // Method to retrun the decimal value of the fraction
   public double GetDecimalValue()
     {
-        return (double)_top / _bottom;
+        return (double)_top / (double)_bottom;
     }
 
 }
