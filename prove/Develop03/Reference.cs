@@ -26,7 +26,15 @@ public class Reference
 
     // Display text method 
    public string GetDisplayText()
-   {
-        return "";
+   {  
+      if (_endVerse == 0)
+      {
+            return $"{_book} {_chapter}:{_verse}";
+      }
+      else
+      {
+            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
+      }
+    
    }
 }

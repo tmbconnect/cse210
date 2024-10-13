@@ -29,9 +29,9 @@ public class Word{
     {
         return _isHidden;
     }
-
+    // Method to get display text
     public string GetDisplayText()
     {
-        return _text;
+        return _isHidden ? "_____" : _text;
     }
 }
