@@ -26,8 +26,8 @@ public class Scripture{
 
         // Ensure that we do not hide more words then are available
         var visibleWords = _words.Where(w => !w.IsHidden()).ToList();
-         // No visable words to hide
-        if (visibleWords.Count == 0) ; return;  
+        // No visable words to hide
+        if (visibleWords.Count == 0) return;  
 
         numberToHide = Math.Min(numberToHide, visibleWords.Count);
 

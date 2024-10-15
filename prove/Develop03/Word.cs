@@ -32,6 +32,6 @@ public class Word{
     // Method to get display text
     public string GetDisplayText()
     {
-        return _isHidden ? "_____" : _text;
+        return _isHidden ? "____" : _text;
     }
 }

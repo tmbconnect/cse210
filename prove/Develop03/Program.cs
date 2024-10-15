@@ -35,8 +35,11 @@ class Program
             // If the user presses Enter without typing anything. Hide a few random words
             if (string.IsNullOrEmpty(userInput))
             {
+                Console.WriteLine("Hiding Words...");
                 scripture.HideRandomWords(3);
             }
+            //Debugging: Check if words are hidden correctly
+            Console.WriteLine("Words Hidden, display again...");
          }
            
            // Final message when all words are hidden or the user quits
