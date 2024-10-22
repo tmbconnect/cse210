@@ -1,6 +1,4 @@
 using System;
-using System.Security.Cryptography;
-using System.Transactions;
 public class Video
 {
     // Atributes for the video class
@@ -19,7 +17,7 @@ public class Video
     }
 
     //Method to add a comment to the video
-    public void AddComment(Comment, comment)
+    public void AddComment(Comment comment)
     {
         _comments.Add(comment);
     }
@@ -35,7 +33,7 @@ public class Video
     {
         Console.WriteLine($"Title: {_title}");
         Console.WriteLine($"Author: {_author}");
-        Console.WriteLine($"Lenthth: {_lengthInSeconds}");
+        Console.WriteLine($"Length: {_lengthInSeconds}");
         Console.WriteLine($"Number of comments: {GetNumberOfComments()}");
         Console.WriteLine("Comments:");
 
