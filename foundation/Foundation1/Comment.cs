@@ -13,7 +13,7 @@ public class Comment
         _commentText = commentText;
     }
 
-    // Method to get the display text fo the comment
+    // Method to get the display text for the comment
     public string GetDisplayText()
     {
         return $"{_commenterName} : {_commentText}";
