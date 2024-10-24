@@ -16,15 +16,27 @@ class Activity
         _duration = duration;
     }
     
-    // Starting message
+    // Method to display the starting message
     public void DisplayStartingMessage()
     {
+        Console.WriteLine($"Starting {_name}");
+        Console.WriteLine($"{_description}");
+        Console.Write("Enter the duration of the activity in seconds: ");
+
+        // Get the duration from the usser and update the _duration variable
+        _duration = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Prepare to begin...");
+        //Pause for a few seconds before starting.
+        ShowSpinner(3);
+
 
     }
     
     // Ending Message
     public void DisplayEndingMessage()
     {
+        
 
     }
 
